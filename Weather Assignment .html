@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5fb;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 10px;
+            border: none;
+            background-color: #a76cff;
+            color: white;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .weather-info {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .weather-info .city-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .weather-details {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .temp {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #ffbb33;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #a76cff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter a city..">
+            <button>Search</button>
+        </div>
+
+        <div class="weather-info">
+            <div class="city-name">Paris</div>
+            <div class="weather-details">Tuesday 07:45, moderate rain</div>
+            <div class="weather-details">Humidity: <span style="color: #e74c3c;">87%</span>, Wind: <span style="color: #e74c3c;">7.2km/h</span></div>
+            <div class="icon">☀️</div>
+            <div class="temp">24°C</div>
+        </div>
+
+        <div class="footer">
+            This project was coded by <a href="#">Vincent Otiende</a> and is on <a href="#">GitHub</a> and <a href="#">hosted on Netlify</a>
+        </div>
+    </div>
+
+</body>
+</html>
